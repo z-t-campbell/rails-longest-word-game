@@ -1,0 +1,32 @@
+<div>
+  <h1>New Game </h1>
+
+  <div class= "letters">
+
+    <% @letters.each do |letter|%>
+      <a>
+        <div class="letter_box">
+          <%= letter%>
+        </div>
+      </a>
+    <%end%>
+
+  </div>
+
+  <p>What is the longest word you can make?</p>
+
+  <div>
+    <form class="form" action="/score">
+
+      <div>
+        <input class="text" type="text" name="word">
+      </div>
+
+      <div>
+        <input class="btn" type="submit" value="Play!">
+      </div>
+
+    </form>
+  </div>
+
+</div>
